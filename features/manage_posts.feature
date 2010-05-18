@@ -15,5 +15,6 @@ Feature: Manage posts
     Given I am on the new post page
     When I fill in "Body" with "And initially, a lot of companies avoid trying to make a really radical new kind of title for a new system, because that would involve learning a new machine and learning how to make the new title at the same time. Trip Hawkins"
     And I press "Create"
+    Then I should not see "not be blank"
     And I should see "And initially, a lot of companies avoid trying to make a really radical new kind of title for a new system, because that would involve learning a new machine and learning how to make the new title at the same time."
 
